@@ -1,0 +1,1095 @@
+﻿/* ========== Page Communication Digitale / digitalservice ========== */
+.dig-page {
+  --dig: #FF4500;
+  --dig-dark: #E03E00;
+  --dig-soft: #FFF5F0;
+  --dig-mid: #FF8A5B;
+  background: #fafafa;
+  padding-bottom: 3.5rem;
+}
+
+.dig-hero {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 0.75rem 0 2rem;
+}
+
+.dig-hero-text h1 {
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  font-weight: 800;
+  color: var(--dig);
+  margin-bottom: 0.85rem;
+  line-height: 1.15;
+}
+
+.dig-hero-text > p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.65;
+  max-width: 520px;
+  margin-bottom: 1.5rem;
+}
+
+.dig-hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 1.75rem;
+}
+
+.dig-hero-points > div {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.dig-hero-ico {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--dig-soft);
+  color: var(--dig);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.dig-hero-points strong {
+  font-size: 0.85rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.dig-hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.dig-hero-glow {
+  position: relative;
+  width: min(100%, 340px);
+  height: 240px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #4a148c 0%, #FF4500 45%, #ab47bc 100%);
+  box-shadow: 0 20px 50px rgba(123, 31, 162, 0.35);
+  overflow: hidden;
+}
+
+.dig-ico-main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.dig-float {
+  position: absolute;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-size: 1.15rem;
+}
+
+.dig-f1 { top: 18%; left: 14%; }
+.dig-f2 { top: 22%; right: 16%; }
+.dig-f3 { bottom: 22%; left: 18%; }
+.dig-f4 { bottom: 18%; right: 14%; }
+.dig-f5 { top: 48%; right: 8%; font-size: 1.35rem; }
+
+/* Layout */
+.dig-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr 280px;
+  gap: 1.35rem;
+  align-items: start;
+}
+
+.dig-side {
+  background: #ffffff;
+  border: 1px solid #ebe0f0;
+  border-radius: 14px;
+  padding: 1.15rem;
+}
+
+.dig-side h3,
+.dig-side-packs > h2,
+.dig-main > h2,
+.dig-how > h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.85rem;
+}
+
+.dig-side-title {
+  margin-top: 1.35rem;
+}
+
+.dig-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.dig-nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0.7rem;
+  border-radius: 8px;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.dig-nav a i {
+  color: var(--dig);
+  width: 1.1rem;
+  text-align: center;
+}
+
+.dig-nav a:hover,
+.dig-nav a.is-active {
+  background: var(--dig-soft);
+  color: var(--dig-dark);
+}
+
+.dig-help {
+  margin-top: 1.5rem;
+  background: var(--dig-soft);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.dig-help-ico {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: var(--dig);
+  display: grid;
+  place-items: center;
+  margin: 0 auto 0.65rem;
+  font-size: 1.15rem;
+}
+
+.dig-help p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin-bottom: 0.85rem;
+}
+
+/* Buttons */
+.dig-btn-solid {
+  background: var(--dig) !important;
+  border-color: var(--dig) !important;
+  color: #fff !important;
+}
+
+.dig-btn-solid:hover {
+  background: var(--dig-dark) !important;
+  border-color: var(--dig-dark) !important;
+}
+
+.dig-btn-outline {
+  background: #ffffff !important;
+  border: 2px solid var(--dig) !important;
+  color: var(--dig) !important;
+}
+
+.dig-btn-outline:hover {
+  background: var(--dig-soft) !important;
+}
+
+.dig-btn-sm {
+  width: 100%;
+  justify-content: center;
+  padding: 0.65rem 1rem;
+  font-size: 0.84rem;
+  border-radius: 8px;
+}
+
+/* Services grid */
+.dig-main {
+  background: transparent;
+}
+
+.dig-services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dig-svc-card {
+  background: #ffffff;
+  border: 1px solid #ebe0f0;
+  border-radius: 14px;
+  padding: 1.25rem 1.15rem;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(106, 27, 154, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: 0.25s ease;
+}
+
+.dig-svc-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(106, 27, 154, 0.1);
+}
+
+.dig-svc-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--dig-soft);
+  color: var(--dig);
+  display: grid;
+  place-items: center;
+  margin: 0 auto 0.85rem;
+  font-size: 1.25rem;
+}
+
+.dig-svc-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.45rem;
+}
+
+.dig-svc-card > p {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  flex: 1;
+}
+
+.dig-link {
+  color: var(--dig);
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.dig-link:hover {
+  gap: 0.55rem;
+}
+
+/* How it works */
+.dig-how {
+  background: #ffffff;
+  border: 1px solid #ebe0f0;
+  border-radius: 14px;
+  padding: 1.35rem 1.25rem;
+}
+
+.dig-steps {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.dig-step {
+  display: flex;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 180px;
+}
+
+.dig-step span {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--dig);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.dig-step strong {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+}
+
+.dig-step p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.dig-step-arrow {
+  color: #c5b0d0;
+  margin-top: 0.55rem;
+  flex-shrink: 0;
+}
+
+/* Packs */
+.dig-side-packs > h2 {
+  font-size: 1.1rem;
+}
+
+.dig-packs-intro {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  line-height: 1.45;
+}
+
+.dig-pack {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #ebe0f0;
+  border-radius: 12px;
+  padding: 1.1rem;
+  margin-bottom: 0.85rem;
+}
+
+.dig-pack.is-popular {
+  border-color: var(--dig);
+  box-shadow: 0 8px 24px rgba(123, 31, 162, 0.12);
+}
+
+.dig-pack-badge {
+  position: absolute;
+  top: -10px;
+  right: 12px;
+  background: var(--dig);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+}
+
+.dig-pack h3 {
+  font-size: 0.98rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--text);
+}
+
+.dig-pack-price {
+  margin-bottom: 0.75rem;
+}
+
+.dig-pack-price strong {
+  color: var(--dig);
+  font-size: 1.15rem;
+}
+
+.dig-pack-price span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.dig-pack ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.9rem;
+}
+
+.dig-pack li {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+  line-height: 1.4;
+}
+
+.dig-pack li i {
+  color: var(--dig);
+  margin-top: 0.15rem;
+}
+
+.dig-custom {
+  background: var(--dig-soft);
+  border-radius: 12px;
+  padding: 1.1rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.dig-custom h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--dig-dark);
+  margin-bottom: 0.35rem;
+}
+
+.dig-custom p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 0.85rem;
+}
+
+@media (max-width: 1100px) {
+  .dig-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dig-side-left {
+    grid-column: 1 / -1;
+  }
+
+  .dig-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .dig-help {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 800px) {
+  .dig-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .dig-hero-visual {
+    order: -1;
+  }
+
+  .dig-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .dig-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dig-step-arrow {
+    display: none;
+  }
+}
+
+.dig-svc-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+/* Modales */
+.dig-modal[hidden] {
+  display: none !important;
+}
+
+.dig-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.dig-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(40, 10, 60, 0.55);
+  backdrop-filter: blur(3px);
+}
+
+.dig-modal-dialog {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 480px);
+  max-height: min(92vh, 860px);
+  overflow-y: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.6rem 1.5rem 1.35rem;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
+}
+
+.dig-modal-close {
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: #f5f0f8;
+  color: #555;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.dig-modal-dialog h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+  padding-right: 2rem;
+}
+
+.dig-modal-sub {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 1.15rem;
+  line-height: 1.5;
+}
+
+.dig-modal-course {
+  color: var(--dig);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.dig-pay-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.dig-modal-dialog--pay {
+  max-height: min(92vh, 720px);
+  overflow-y: auto;
+}
+
+.dig-pay-method-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0.35rem 0 0.55rem;
+}
+
+.dig-pay-methods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.55rem;
+  margin-bottom: 1rem;
+}
+
+.dig-pay-method {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.75rem 0.4rem;
+  border: 1.5px solid #e8e8e8;
+  border-radius: 10px;
+  background: #fff;
+  color: #5a5a5a;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.dig-pay-method i {
+  font-size: 1.15rem;
+  color: #FF4500;
+}
+
+.dig-pay-method:hover {
+  border-color: #FF8A5B;
+}
+
+.dig-pay-method.is-active {
+  border-color: #FF4500;
+  background: #FFF5F0;
+  color: #1a1a1a;
+  box-shadow: 0 0 0 2px rgba(255, 69, 0, 0.12);
+}
+
+.dig-pay-panel[hidden] {
+  display: none !important;
+}
+
+.dig-field select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.92rem;
+  background: #fff;
+  color: #1a1a1a;
+}
+
+.dig-field select:focus {
+  outline: none;
+  border-color: var(--dig);
+  box-shadow: 0 0 0 3px rgba(255, 69, 0, 0.12);
+}
+
+.dig-field input,
+.dig-field textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.92rem;
+}
+
+.dig-field input:focus,
+.dig-field textarea:focus {
+  outline: none;
+  border-color: var(--dig);
+  box-shadow: 0 0 0 3px rgba(255, 69, 0, 0.12);
+}
+
+@media (max-width: 480px) {
+  .dig-pay-methods {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dig-field {
+  margin-bottom: 0.85rem;
+}
+
+.dig-field label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.dig-field input[readonly] {
+  background: #f8f4fb;
+  color: var(--dig-dark);
+  font-weight: 600;
+}
+
+.dig-input-icon {
+  position: relative;
+}
+
+.dig-input-icon input {
+  padding-right: 2.5rem;
+}
+
+.dig-input-icon i {
+  position: absolute;
+  right: 0.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--dig);
+}
+
+.dig-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.dig-amount-box {
+  margin: 0.5rem 0 1rem;
+  padding: 0.9rem 1rem;
+  background: var(--dig-soft);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.dig-amount-box strong {
+  color: var(--dig-dark);
+  font-size: 1.1rem;
+}
+
+.dig-btn-full {
+  width: 100%;
+  justify-content: center;
+}
+
+.dig-modal-feedback {
+  margin-top: 0.9rem;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.dig-modal-feedback.is-success {
+  background: #FFF5F0;
+  color: #E03E00;
+  border: 1px solid #FF8A5B;
+}
+
+.dig-success {
+  text-align: center;
+  padding: 1.5rem 0.5rem;
+}
+
+.dig-success-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--dig-soft);
+  color: var(--dig);
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
+  margin: 0 auto 1rem;
+}
+
+.dig-success h3 {
+  margin-bottom: 0.5rem;
+}
+
+.dig-success p {
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+/* Page détail */
+.dig-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--dig);
+  font-weight: 600;
+  font-size: 0.92rem;
+  margin-bottom: 1.25rem;
+}
+
+.dig-detail-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dig-detail-hero-ico {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--dig-soft);
+  color: var(--dig);
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.dig-detail-hero-text h1 {
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.dig-detail-hero-text > p {
+  color: var(--text-muted);
+  line-height: 1.65;
+  max-width: 540px;
+  margin-bottom: 1.25rem;
+}
+
+.dig-hero-glow-detail {
+  height: 220px;
+}
+
+.dig-detail-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  align-items: start;
+}
+
+.dig-detail-main {
+  background: #ffffff;
+  border: 1px solid #ebe0f0;
+  border-radius: 14px;
+  padding: 1.5rem;
+}
+
+.dig-detail-main h2 {
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.dig-detail-about {
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+.dig-inclus {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem 1rem;
+}
+
+.dig-inclus li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.dig-inclus i {
+  color: var(--dig);
+  margin-top: 0.2rem;
+}
+
+.dig-detail-card {
+  background: #ffffff;
+  border: 1px solid #ebe0f0;
+  border-radius: 14px;
+  padding: 1.35rem;
+  box-shadow: 0 8px 24px rgba(106, 27, 154, 0.08);
+  position: sticky;
+  top: 100px;
+}
+
+.dig-detail-price {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.dig-detail-price strong {
+  display: block;
+  font-size: 1.45rem;
+  color: var(--dig);
+  margin: 0.2rem 0;
+}
+
+.dig-detail-price span {
+  font-size: 0.85rem;
+}
+
+.dig-detail-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin-bottom: 1.15rem;
+}
+
+.dig-detail-meta li {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dig-detail-meta i {
+  color: var(--dig);
+  width: 1.1rem;
+}
+
+.dig-detail-card .btn + .btn {
+  margin-top: 0.55rem;
+}
+
+.dig-section {
+  margin-bottom: 2.25rem;
+}
+
+.dig-section > h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.dig-livrables {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.dig-liv-card {
+  background: #ffffff;
+  border: 1px solid #ebe0f0;
+  border-radius: 12px;
+  padding: 1.25rem 1rem;
+  text-align: center;
+}
+
+.dig-liv-card i {
+  color: var(--dig);
+  font-size: 1.5rem;
+  margin-bottom: 0.65rem;
+  display: block;
+}
+
+.dig-liv-card strong {
+  font-size: 0.88rem;
+  color: var(--text);
+  line-height: 1.35;
+}
+
+.dig-pourquoi {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.dig-pourquoi-card {
+  background: #ffffff;
+  border: 1px solid #ebe0f0;
+  border-radius: 12px;
+  padding: 1.25rem 1rem;
+  text-align: center;
+}
+
+.dig-pourquoi-card h3 {
+  font-size: 1rem;
+  margin: 0.65rem 0 0.4rem;
+}
+
+.dig-pourquoi-card p {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.dig-cta-banner {
+  background: linear-gradient(120deg, #4a148c, #FF4500 55%, #E03E00);
+  border-radius: 16px;
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.dig-cta-banner p {
+  font-size: 1rem;
+  font-weight: 600;
+  max-width: 480px;
+  line-height: 1.45;
+}
+
+.dig-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.dig-cta-pay {
+  background: #ffffff !important;
+  color: var(--dig) !important;
+  border-color: #fff !important;
+}
+
+.dig-cta-devis {
+  background: transparent !important;
+  color: #fff !important;
+  border: 2px solid rgba(255, 255, 255, 0.85) !important;
+}
+
+@media (max-width: 960px) {
+  .dig-detail-hero,
+  .dig-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dig-detail-card {
+    position: static;
+  }
+
+  .dig-inclus,
+  .dig-livrables,
+  .dig-pourquoi {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .dig-inclus,
+  .dig-livrables,
+  .dig-pourquoi,
+  .dig-form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Conception d'application — thème teal + images dév */
+.dig-page-conception {
+  --dig: #FF4500;
+  --dig-dark: #E03E00;
+  --dig-soft: #FFF5F0;
+  --dig-mid: #FF8A5B;
+}
+
+.dig-page-conception .cap-accent {
+  color: #00897B;
+  display: inline;
+}
+
+.dig-hero-visual-img {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 105, 92, 0.18);
+}
+
+.dig-hero-visual-img img,
+.dig-detail-hero-visual.dig-hero-visual-img img {
+  width: 100%;
+  height: min(340px, 48vw);
+  object-fit: cover;
+  display: block;
+}
+
+.dig-svc-card-img {
+  padding-top: 0;
+  overflow: hidden;
+}
+
+.dig-svc-media {
+  margin: -0.15rem -1.15rem 0.85rem;
+  height: 140px;
+  overflow: hidden;
+}
+
+.dig-svc-card-img .dig-svc-media {
+  margin: 0 0 0.85rem;
+  border-radius: 12px 12px 0 0;
+}
+
+.dig-svc-card-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.dig-svc-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dig-svc-card-img .dig-svc-icon {
+  margin-top: -1.6rem;
+  position: relative;
+  z-index: 1;
+  align-self: center;
+}

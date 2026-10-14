@@ -1,0 +1,221 @@
+/* ============================================
+   MARINA — Charte graphique globale
+   Blanc / Orange (#FF4500) / Noir
+   Chargé en dernier → s’applique à toutes les pages
+   ============================================ */
+
+:root {
+  --primary: #FF4500;
+  --primary-dark: #E03E00;
+  --primary-deep: #B83200;
+  --accent: #FF6A33;
+  --accent-light: #FF8A5B;
+  --lime: #FF7033;
+  --text: #1A1A1A;
+  --text-muted: #5A5A5A;
+  --bg: #FFFFFF;
+  --bg-soft: #F7F7F7;
+  --surface: #FFFFFF;
+  --surface-2: #FAFAFA;
+  --border: #E8E8E8;
+  --dark: #000000;
+  --white: #FFFFFF;
+
+  /* Services */
+  --svc: #FF4500;
+  --svc-soft: #FFF5F0;
+
+  /* Business Center */
+  --bc: #FF4500;
+  --bc-dark: #E03E00;
+  --bc-soft: #FFF5F0;
+  --bc-bg: #F7F7F7;
+  --bc-border: #E8E8E8;
+  --bc-text: #1A1A1A;
+  --bc-muted: #5A5A5A;
+
+  /* Business intl / catalogue / commande */
+  --bci: #FF4500;
+  --bci-dark: #E03E00;
+  --bci-soft: #FFF5F0;
+  --bci-bg: #F7F7F7;
+  --bci-border: #E8E8E8;
+  --bci-text: #1A1A1A;
+  --bci-muted: #5A5A5A;
+  --bcc: #FF4500;
+  --bcc-dark: #E03E00;
+  --bcc-soft: #FFF5F0;
+  --bcc-bg: #F7F7F7;
+  --bcc-border: #E8E8E8;
+  --bcc-text: #1A1A1A;
+  --bcc-muted: #5A5A5A;
+  --bco: #FF4500;
+  --bco-dark: #E03E00;
+  --bco-soft: #FFF5F0;
+  --bco-bg: #F7F7F7;
+  --bco-border: #E8E8E8;
+  --bco-text: #1A1A1A;
+  --bco-muted: #5A5A5A;
+
+  /* Immobilier */
+  --imb: #FF4500;
+  --imb-dark: #E03E00;
+  --imb-soft: #FFF5F0;
+  --imb-text: #1A1A1A;
+  --imb-muted: #5A5A5A;
+  --imb-border: #E8E8E8;
+  --imb-bg: #F7F7F7;
+  --imbl: #FF4500;
+  --imbl-dark: #E03E00;
+  --imbl-soft: #FFF5F0;
+  --imbl-text: #1A1A1A;
+  --imbl-muted: #5A5A5A;
+  --imbl-border: #E8E8E8;
+  --imbl-bg: #F7F7F7;
+  --imbl-green: #FF4500;
+  --imbl-orange: #FF4500;
+  --imbd: #FF4500;
+  --imbd-dark: #E03E00;
+  --imbd-soft: #FFF5F0;
+  --imbd-text: #1A1A1A;
+  --imbd-muted: #5A5A5A;
+  --imbd-border: #E8E8E8;
+  --imbd-blue: #FF4500;
+
+  /* Sous-traitance */
+  --st: #FF4500;
+  --st-dark: #E03E00;
+  --st-soft: #FFF5F0;
+  --st-accent: #FF4500;
+  --st-text: #1A1A1A;
+  --st-muted: #5A5A5A;
+  --st-border: #E8E8E8;
+
+  /* Communication digitale / conception apps */
+  --dig: #FF4500;
+  --dig-dark: #E03E00;
+  --dig-soft: #FFF5F0;
+  --dig-mid: #FF8A5B;
+
+  /* Emplois */
+  --jobs-orange: #FF4500;
+  --jobs-orange-soft: #FFF5F0;
+}
+
+/* Forcer les variables locales des pages (sélecteurs scoped) */
+.page-service,
+.svc-page,
+.page-business-center,
+.bc-page,
+.page-immobilier-btp,
+.imb-page,
+.page-immobilier-biens,
+.imbl-page,
+.page-immobilier-bien-show,
+.imbd-page,
+.page-sous-traitance,
+.page-sous-traitance-insc,
+.st-page,
+.st-insc-page,
+.dig-page,
+.page-business-intl,
+.page-business-catalogue,
+.page-business-commande,
+.bci-page,
+.bcc-page,
+.bco-page,
+.jobs-page,
+.formations-page,
+.apropos-page,
+.contact-page,
+.partenaires-page,
+.soutenir-page,
+.pe-page {
+  --primary: #FF4500;
+  --primary-dark: #E03E00;
+  --accent: #FF6A33;
+  --svc: #FF4500;
+  --svc-soft: #FFF5F0;
+  --bc: #FF4500;
+  --bc-dark: #E03E00;
+  --bc-soft: #FFF5F0;
+  --bci: #FF4500;
+  --bci-dark: #E03E00;
+  --bci-soft: #FFF5F0;
+  --bcc: #FF4500;
+  --bcc-dark: #E03E00;
+  --bcc-soft: #FFF5F0;
+  --bco: #FF4500;
+  --bco-dark: #E03E00;
+  --bco-soft: #FFF5F0;
+  --imb: #FF4500;
+  --imb-dark: #E03E00;
+  --imb-soft: #FFF5F0;
+  --imbl: #FF4500;
+  --imbl-dark: #E03E00;
+  --imbl-soft: #FFF5F0;
+  --imbd: #FF4500;
+  --imbd-dark: #E03E00;
+  --imbd-soft: #FFF5F0;
+  --imbd-blue: #FF4500;
+  --st: #FF4500;
+  --st-dark: #E03E00;
+  --st-soft: #FFF5F0;
+  --st-accent: #FF4500;
+  --dig: #FF4500;
+  --dig-dark: #E03E00;
+  --dig-soft: #FFF5F0;
+  --dig-mid: #FF8A5B;
+  --jobs-orange: #FF4500;
+  --jobs-orange-soft: #FFF5F0;
+}
+
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+main {
+  background: #ffffff;
+}
+
+/* Boutons & liens d’accent */
+.btn-primary,
+button.btn-primary,
+a.btn-primary {
+  background: #FF4500 !important;
+  border-color: #FF4500 !important;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover,
+button.btn-primary:hover,
+a.btn-primary:hover {
+  background: #E03E00 !important;
+  border-color: #E03E00 !important;
+}
+
+/* Titres / accents fréquents */
+.section-label,
+.svc-back,
+.bc-back,
+.imb-back,
+.st-back,
+.dig-back {
+  color: #FF4500;
+}
+
+input,
+textarea,
+select {
+  background: #ffffff;
+  color: #1a1a1a;
+  border-color: #e8e8e8;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #FF4500;
+  outline-color: #FF4500;
+}

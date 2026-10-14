@@ -1,0 +1,379 @@
+﻿/* ========== Page Devenir partenaire ========== */
+.part-page {
+  background: #ffffff;
+}
+
+.part-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.part-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.82) 45%, rgba(255, 255, 255, 0.35) 100%);
+}
+
+.part-hero-inner {
+  position: relative;
+  z-index: 1;
+  padding: 3.5rem 0 3rem;
+  max-width: 720px;
+  color: #1a1a1a;
+}
+
+.part-eyebrow {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FF4500;
+  margin-bottom: 0.65rem;
+}
+
+.part-hero h1 {
+  font-size: clamp(1.7rem, 4vw, 2.6rem);
+  font-weight: 800;
+  color: #E03E00;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.part-lead {
+  color: #4a4a4a;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.75rem;
+}
+
+.part-values {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.part-values > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 0.75rem;
+  align-items: start;
+}
+
+.part-values i {
+  grid-row: span 2;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #FFF5F0;
+  color: #FF4500;
+  display: grid;
+  place-items: center;
+}
+
+.part-values strong {
+  font-size: 0.92rem;
+  color: #1a1a1a;
+}
+
+.part-values span {
+  font-size: 0.8rem;
+  color: #5a5a5a;
+}
+
+.part-types {
+  padding-bottom: 3rem;
+}
+
+.part-types > h2 {
+  text-align: center;
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+.part-types-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 0.85fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.part-type-card {
+  background: #ffffff;
+  border: 1px solid #E8E8E8;
+  border-radius: 14px;
+  padding: 1.5rem 1.15rem;
+  text-align: center;
+}
+
+.part-type-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #FFF5F0;
+  color: #FF4500;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 1rem;
+  font-size: 1.2rem;
+}
+
+.part-type-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.55rem;
+}
+
+.part-type-card p {
+  font-size: 0.86rem;
+  color: #5a5a5a;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  min-height: 4em;
+}
+
+.part-quote {
+  background: #FFF5F0;
+  border-radius: 14px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #E03E00;
+}
+
+.part-quote i {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  opacity: 0.7;
+}
+
+.part-quote p {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.part-form-section {
+  padding-bottom: 2rem;
+}
+
+.part-form-layout {
+  display: grid;
+  grid-template-columns: 1.45fr 0.9fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.part-form-box,
+.part-side-card {
+  background: #ffffff;
+  border: 1px solid #E8E8E8;
+  border-radius: 16px;
+  padding: 1.75rem;
+}
+
+.part-form-box h2 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.part-form-intro {
+  color: #5a5a5a;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.part-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.part-field {
+  margin-bottom: 1rem;
+}
+
+.part-field label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #1a1a1a;
+}
+
+.part-field input,
+.part-field select,
+.part-field textarea {
+  width: 100%;
+  border: 1px solid #FFE4D6;
+  border-radius: 8px;
+  padding: 0.7rem 0.85rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  background: #ffffff;
+}
+
+.part-field input:focus,
+.part-field select:focus,
+.part-field textarea:focus {
+  border-color: #FF4500;
+}
+
+.part-file {
+  border: 1px dashed #b7cbb7;
+  border-radius: 8px;
+  padding: 0.85rem;
+  background: #f7f7f7;
+}
+
+.part-file input {
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+
+.part-file span {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+  color: #5a5a5a;
+}
+
+.part-check {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  font-size: 0.88rem;
+  color: #4a4a4a;
+  margin: 0.5rem 0 1.25rem;
+}
+
+.part-submit {
+  width: 100%;
+}
+
+.part-form-msg {
+  margin-top: 1rem;
+  background: #FFF5F0;
+  color: #E03E00;
+  padding: 0.85rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.part-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.part-side-card h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.part-side-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.part-side-card li {
+  display: flex;
+  gap: 0.55rem;
+  font-size: 0.9rem;
+  color: #4a4a4a;
+}
+
+.part-side-card li i {
+  color: #FF4500;
+  margin-top: 0.2rem;
+}
+
+.part-engage {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.part-engage > div {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.part-engage i {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #FFF5F0;
+  color: #FF4500;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.part-engage strong {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.part-engage span {
+  font-size: 0.8rem;
+  color: #5a5a5a;
+}
+
+.part-side-contact p {
+  font-size: 0.9rem;
+  color: #4a4a4a;
+  margin-bottom: 0.55rem;
+}
+
+.part-side-contact i {
+  color: #FF4500;
+  width: 1.1rem;
+  margin-right: 0.35rem;
+}
+
+.part-side-contact .btn {
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 1100px) {
+  .part-types-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .part-quote {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 960px) {
+  .part-form-layout,
+  .part-form-row,
+  .part-values {
+    grid-template-columns: 1fr;
+  }
+
+  .part-types-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .part-quote {
+    grid-column: auto;
+  }
+}
